@@ -1,0 +1,19 @@
+{
+  "datasets": [
+    {
+      "topic": "air_quality",
+      "table_name": "environmental_records_raw",
+      "schema_type": "air_quality"
+    },
+    {
+      "topic": "fitness_activity",
+      "table_name": "fitness_records_raw",
+      "schema_type": "fitness"
+    },
+    {
+      "topic": "health_indicators",
+      "table_name": "health_records_raw",
+      "schema_type": "health"
+    }
+  ]
+}

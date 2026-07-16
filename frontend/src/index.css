@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #021815; /* Deep Emerald Black */
+  color: #E2E8F0;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Base App Background Glows */
+body::before {
+  content: "";
+  position: fixed;
+  top: -20vh;
+  left: -10vw;
+  width: 50vw;
+  height: 50vh;
+  background: radial-gradient(circle, rgba(0, 245, 160, 0.15) 0%, rgba(0, 210, 255, 0) 70%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  bottom: -20vh;
+  right: -10vw;
+  width: 60vw;
+  height: 60vh;
+  background: radial-gradient(circle, rgba(0, 210, 255, 0.12) 0%, rgba(0, 245, 160, 0) 70%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 245, 160, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 245, 160, 0.6);
+}
+
+.glass-panel {
+  background: rgba(6, 44, 39, 0.4) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.neon-text {
+  background: linear-gradient(90deg, #00F5A0, #00D2FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(0, 245, 160, 0.3);
+}
